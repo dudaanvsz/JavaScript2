@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios de JS e DOM</title>
+</head>
+<body>
+  <h1 id="titulo">Exercícios JS</h1>
+  <p id="paragrafo">Texto original</p>
+  <p id="textoDigitado"></p>
+
+  <ul id="lista">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <p id="remover">Eu vou ser removido!</p>
+  <p id="textoEstilizado">Texto a ser estilizado</p>
+
+  <!-- Campo para digitação -->
+  <input type="text" id="campoTexto" placeholder="Digite algo...">
+
+  <!-- Botões -->
+  <div style="margin-top:20px;">
+    <button onclick="trocarTexto()">Trocar Texto</button>
+    <button onclick="mudarFundo()">Mudar Fundo</button>
+    <button onclick="adicionarItem()">Adicionar Item</button>
+    <button onclick="removerParagrafo()">Remover Parágrafo</button>
+    <button onclick="personalizar()">Personalizar Texto e Título</button>
+    <button id="botaoMouseover">Passe o mouse aqui</button>
+    <button id="botaoEsconder">Clique 2x para esconder</button>
+    <button onclick="alterarFonte()">Fonte Aleatória</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Canvas</title>
+</head>
+<body>
+     <canvas id="meuCanvas" width="700" height="600"
+    style="border: 5px solid black;"></canvas>
+
+     <script>
+        //pegando o canvas
+        const canvas=document.getElementById("meuCanvas")
+        const ctx = canvas.getContext("2d")
+
+        //1 - Usando o canvas, desenhe um quadrado verde
+        ctx.fillStyle = "green" //cor preenchimento
+        ctx.fillRect(50,50,50,50) //x, y, largura, altura
+
+        //2 - Usando o canvas, desenhe um círculo vermelho 
+        ctx.beginPath() //inicia um novo caminho
+        ctx.arc(200,100,30,0,2*Math.PI)
+        //centro(200,100) raio(30,0, 2pi radio)
+        ctx.fillStyle = "red"
+        ctx.fill() //preenche o circulo
+
+        //apagar uma parte do quadrado
+        ctx.clearRect(60,80,50,50)
+        //apagar a posição 100 e 80 com uma "borracha" de 50x50
+        
+         //4.1 - Carinha feliz
+        //Cabeça
+        ctx.beginPath()
+        ctx.arc(300,150,50,0,2*Math.PI) 
+        ctx.fillStyle = "yellow"
+        ctx.fill()
+        ctx.strokeStyle = "black"
+        ctx.lineWidth = 3
+        ctx.stroke()
+
+         //Olho esquerdo
+        ctx.beginPath()
+        ctx.arc(280,140,5,0,2*Math.PI)
+        ctx.fillStyle = "black"
+        ctx.fill()
+
+        //Olho direito
+        ctx.beginPath()
+        ctx.arc(320,140,5,0,2*Math.PI)
+        ctx.fillStyle = "black"
+        ctx.fill()
+
+        //Boca 
+        ctx.beginPath()
+        ctx.arc(300,160,20,0,Math.PI)
+        ctx.stroke()
+
+        //4.2 - Uma casa simples, faça:
+        ctx.fillStyle = "lightblue" //cor preenchimento
+        ctx.fillRect(100,400,150,150) //x, y, largura, altura
+        ctx.strokeStyle = "black"
+        ctx.lineWidth = 3
+        ctx.strokeRect(100,400,150,150)
+
+        //desenhar um triangulo
+        ctx.beginPath()
+        ctx.moveTo(170,300) //novo ponto inicial
+        ctx.lineTo(100,400) //linha de um lugar ao outro
+        ctx.lineTo(250,400) //linha de um lugar ao outro
+        ctx.closePath() //fecha o triangulo
+        ctx.fillStyle = "orange"
+        ctx.fill()
+        ctx.strokeStyle = "black"
+        ctx.lineWidth = 3
+        ctx.stroke()
+
+         //desenhar um retangulo
+        ctx.fillStyle = "orange" //cor preenchimento
+        ctx.fillRect(150,470,50,80) //x, y, largura, altura
+        ctx.strokeStyle = "black"
+        ctx.lineWidth = 3
+        ctx.strokeRect(150,470,50,80)
+
+        //bandeira
+          
+        ctx.fillStyle = "white" //cor preenchimento
+        ctx.fillRect(400,400,250,150) //x, y, largura, altura
+         ctx.strokeStyle = "black"
+        ctx.lineWidth = 3
+        ctx.strokeRect(400,400,250,150)
+         ctx.fillStyle = "black" //cor preenchimento
+        ctx.fillRect(400,400,250,50) //x, y, largura, altura
+         ctx.fillStyle = "red" //cor preenchimento
+        ctx.fillRect(400,450,250,100) //x, y, largura, altura
+         ctx.fillStyle = "yellow" //cor preenchimento
+        ctx.fillRect(400,500,250,50) //x, y, largura, altura
+        
+        
+        
+
+
+
+
+
+
+
+
+
+        
+        
+    </script>
+
+</body>
+</html>
+
