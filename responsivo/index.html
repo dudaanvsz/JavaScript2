@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exercícios de JS e DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lista 03 - Responsivo</h1>
+
+  <!-- 1. Troca de Banner Automática -->
+  <section>
+    <h2>1. Troca de Banner Automática</h2>
+    <div class="img-container">
+      <img id="banner" alt="Banner automático">
+    </div>
+  </section>
+
+  <!-- 2. Troca de Imagem ao Clicar -->
+  <section>
+    <h2>2. Troca de Imagem ao Clicar (Lâmpada)</h2>
+    <div class="img-container small">
+      <img id="lampada" alt="Lâmpada (clique para alternar)">
+    </div>
+  </section>
+
+  <!-- 3. Mostrar/Esconder Imagem com Botão -->
+  <section>
+    <h2>3. Mostrar/Esconder Imagem com Botão</h2>
+    <button id="toggle-btn">Mostrar/Esconder</button>
+    <div class="img-container medium">
+      <img id="imagem-toggle" src="https://i.pinimg.com/736x/fc/3a/bb/fc3abb1e0f665cf076a6dcd2b22ea88d.jpg" alt="Paisagem">
+    </div>
+  </section>
+
+  <!-- 4. Troca de Foto de Perfil -->
+ <section>
+  <h2>Troca de Foto de Perfil</h2>
+  <div class="img-container perfil">
+    <img id="perfil" src="" alt="Foto de Perfil">
+  </div>
+  <button id="trocar-foto">Trocar Foto</button>
+</section>
+
+  <!-- 5. Galeria com Clique -->
+  <section>
+    <h2>5. Galeria com Clique</h2>
+    <div class="galeria">
+      <img class="mini" src="https://i.pinimg.com/736x/06/57/ba/0657bad056578e8462a08a351790f235.jpg" alt="Imagem 1">
+      <img class="mini" src="https://i.pinimg.com/1200x/37/19/2d/37192df7058579e07dfb465253626ba4.jpg" alt="Imagem 2">
+      <img class="mini" src="https://i.pinimg.com/736x/9f/13/85/9f138558dfeb14d94e2c21f98dcf34e2.jpg" alt="Imagem 3">
+    </div>
+    <div class="img-container medium">
+      <img id="imagem-grande" src="" alt="Imagem Grande">
+    </div>
+  </section>
+
+  <!-- 6. Banner com 3 Versões -->
+  <section>
+    <h2>6. Banner com 3 Versões (mobile / tablet / desktop)</h2>
+    <div class="img-container">
+      <img id="banner-responsivo" alt="Banner responsivo">
+    </div>
+  </section>
+
+  <!-- 7. Desafio — Carrossel Simples -->
+  <section>
+    <h2>7. Desafio — Carrossel Simples</h2>
+    <div id="carrossel">
+      <button id="anterior">Anterior</button>
+      <div class="img-container medium">
+        <img id="img-carrossel" src="" alt="Carrossel">
+      </div>
+      <button id="proximo">Próxima</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
